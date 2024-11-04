@@ -1,0 +1,5 @@
+*.priv
+__pycache__
+banned_words.txt
+*.log
+openai_manager.py
