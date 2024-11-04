@@ -60,16 +60,6 @@ async def on_ready():
 		banned_words_pattern = None
 		logger.error(f"Could not read the banned words")
 
-# @client.event
-# async def on_message(message):
-# 	if message.author == client.user:
-# 		return
-
-# 	if message.content.startswith("!pnp"):
-# 		logger.debug(f"Received message: {message.content}")
-# 		response = OAI.get_response(message.content)
-# 		logger.debug(f"Response: {response}")
-# 		await message.channel.send(response)
 
 async def banned_words_check(message): # Function to check for banned words using global banned_words list and regex
 	if banned_words_pattern:
